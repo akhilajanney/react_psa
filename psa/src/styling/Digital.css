@@ -1,0 +1,36 @@
+@font-face {
+  font-family: Roboto-Thin;
+  src: url("../fonts/Roboto-Thin.ttf");
+}
+
+.timeblock {
+  width: 95vw;
+  height: 13vh;
+  background-color: rgba(128, 128, 128, 0.3);
+  float: right;
+}
+
+.timeStyle {
+  display: flex;
+  flex-direction: row;
+  width: 96%;
+  margin: auto;
+  font-size: 26px;
+  font-family: Roboto-Thin;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  border: 1px solid gray;
+  border-radius: 15px;
+  box-shadow: 0px 0px 7px gray;
+}
+
+.timeStyle span {
+  margin: 10px;
+}
+
+.timeStyle .divider {
+  border-left: 1.5px solid gray;
+  width: 1px;
+  margin: 10px;
+}

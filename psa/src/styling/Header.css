@@ -1,0 +1,35 @@
+#header {
+  width: 95vw;
+  height: 10vh;
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+#header section {
+  display: flex;
+  justify-content: row;
+}
+
+#header section:first-child img {
+  margin: auto;
+  margin-left: 20px;
+}
+
+#header section:last-child {
+  margin-right: 20px;
+}
+
+#header section:last-child i {
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.divider {
+  border-left: 2.5px solid gray;
+  width: 1px;
+  margin-left: 20px;
+}

@@ -1,0 +1,354 @@
+@font-face {
+  font-family: Roboto-Black;
+  src: url("../fonts/Roboto-Black.ttf");
+}
+@font-face {
+  font-family: Roboto-Light;
+  src: url("../fonts/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: Roboto-Medium;
+  src: url("../fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: Roboto-Thin;
+  src: url("../fonts/Roboto-Thin.ttf");
+}
+
+/* ---------PROPERTIES FOR FORM ELEMENTS------------ */
+.input-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  max-width: 500px;
+}
+.label {
+  /* font-size: 1.2vw; */
+  font-size: 16px;
+  font-family: Roboto-Light;
+  padding: 7px;
+  color: rgb(0, 0, 0);
+}
+.input {
+  width: 280px;
+  height: 28px;
+  border: 0px;
+  background: white;
+  font-family: Roboto-Medium;
+  font-size: 15px;
+  color: black;
+  padding: 10px;
+}
+input[type="radio"] {
+  width: 15px;
+  height: 15px;
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 0px;
+  background: white;
+  font-family: Roboto-Medium;
+  margin-left: 20px;
+}
+input::placeholder,
+select::placeholder {
+  font-size: 15px;
+  color: gray;
+}
+fieldset {
+  padding: 10px;
+  border-color: rgb(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+legend {
+  font-size: 18px;
+  font-family: Roboto-Medium;
+  color: rgb(0, 0, 0, 0.5);
+  margin-left: 10px;
+}
+/* .small-field {
+  max-width: 200px;
+  padding: px;
+} */
+.column-content {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* ---------PROPERTIES FOR CLICKABLE BUTTON------------ */
+.btn {
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 10px;
+  font-weight: bold;
+  font-family: Roboto-Medium;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7), -3px -3px 6px rgb(173, 167, 167);
+}
+.btn-center {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btn-fitcontent {
+  max-width: fit-content;
+  padding: 8px 30px;
+  box-shadow: none;
+}
+.success-btn {
+  background-color: rgb(0, 98, 135);
+}
+.btn-green {
+  background-color: rgb(0, 135, 117);
+}
+.warning-btn {
+  background-color: #fc3b3b;
+}
+.success-btn:hover {
+  background-color: rgb(0, 135, 117);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0), -3px -3px 6px rgb(173, 167, 167);
+}
+.tick-btn {
+  background-color: rgb(0, 135, 117);
+  border-radius: 4px;
+  padding: 4px;
+  font-weight: bold;
+  font-family: Roboto-Medium;
+  font-size: 10px;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: none;
+}
+
+/* ---------PROPERTIES FOR ERROR AND SUCCESS MESSAGE------------ */
+.msg {
+  font-size: 16px;
+  text-transform: capitalize;
+  font-family: Roboto-Regular;
+  display: block;
+}
+.error-msg {
+  color: red;
+  margin: 0px;
+  text-align: center;
+}
+.success-msg {
+  color: green;
+  margin: 0px;
+  text-align: center;
+}
+
+/* ---------PROPERTIES FOR TABLE------------ */
+table {
+  border-collapse: collapse;
+  width: max-content;
+  width: 100%;
+  margin: 10px 0px;
+  /* box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -12px -12px 16px 0 rgba(0, 0, 0, 0.03); */
+}
+th,
+td {
+  padding: 5px 0px;
+  text-align: center;
+  font-family: Roboto-Regular;
+  background-color: white;
+  color: black;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+}
+th {
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+td {
+  font-size: 1.1vw;
+}
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+tr th {
+  background-color: darkgray;
+}
+.table-border-bottom tr {
+  border-bottom: 1px solid black;
+}
+
+/* ---------PROPERTIES FOR DISPLAYING CONTAINER------------ */
+.container {
+  width: 95vw;
+  height: 77vh;
+  float: right;
+  background-color: rgba(128, 128, 128, 0.3);
+  padding: 0px 30px;
+  overflow-y: auto;
+}
+.divider {
+  border-left: 1.5px solid gray;
+  width: 1px;
+  margin: 10px;
+}
+.content {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  text-align: center;
+}
+.content-section {
+  justify-content: space-between;
+  font-family: Roboto-Light;
+  /* padding: 15px; */
+
+  background-color: white;
+  border-radius: 5px;
+}
+.content-section p {
+  font-weight: bolder;
+  font-size: 20px;
+}
+.content-section p:first-child {
+  padding: 10px;
+}
+.content-section p:last-child {
+  font-size: 25px;
+  background-color: rgb(172, 172, 172);
+  /* color: #fc3b3b; */
+  margin: 5px;
+}
+.main {
+  width: 100%;
+  margin-top: 20px;
+}
+.row {
+  height: fit-content;
+  border: none;
+  display: table;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.col-3 {
+  width: 33.33%;
+  display: inline-block;
+  /* padding: 2px; */
+}
+.col-34 {
+  width: 66.66%;
+  display: inline-block;
+}
+
+/* ---------PROPERTIES FOR DISPLAYING HEADINGS------------  */
+.heading {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: Roboto-Medium;
+  color: rgba(0, 0, 0, 0.6);
+}
+.sub-heading {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Roboto-Medium;
+  color: rgba(0, 0, 0, 0.6);
+  /* display: inline-flex; */
+  padding: 0px 0px 0px 0px;
+}
+hr {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* ---------PROPERTIES FOR DISPLAYING CONTAINER------------ */
+.model {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  /* transform-style: preserve-3d; */
+  /* perspective: 500px; */
+}
+.modelbox {
+  margin: auto;
+  max-width: 250px;
+  background-color: rgb(238, 227, 210);
+  border: none;
+  box-shadow: 1px 1px 5px black;
+  border-radius: 5px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 1s ease;
+  padding: 20px;
+}
+.modelcontent {
+  text-align: center;
+  color: black;
+  font-family: Roboto-Regular;
+}
+.modelbtn {
+  border: none;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-weight: bold;
+  font-family: Roboto-Medium;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color: rgb(0, 135, 117);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+}
+.mySlides {
+  display: none;
+}
+.circle {
+  width: 0px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: black;
+}
+#floorDiv div:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* ---------PROPERTIES FOR DISPLAYING INFORMATION CARD ------------ */
+.card {
+  border: none;
+  border-radius: none;
+  box-shadow: 0px 0px 5px black;
+  padding: 10px;
+  height: auto;
+  width: fit-content;
+  background-color: white;
+}
+
+#serviceHistory tr td {
+  font-size: 12px;
+  font-family: Roboto-Regular;
+}
+
+#tableheader tr th {
+  font-size: 14px;
+  font-family: Roboto-Medium;
+}
